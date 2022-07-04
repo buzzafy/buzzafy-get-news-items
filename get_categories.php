@@ -10,6 +10,11 @@ please contact us if you have any question
 
 define('AMAX_KEY_PUBLIC' , 'Your public api key'); //Your public api key -> https://amaxwire.com/dashboard/apikey
 
+/* 
+userlang ?
+The available languages can be found at amawire.com 
+We are working hard to add more in the near future. 
+*/
 
 $url = file_get_contents('https://amaxwire.com/api/get/?p='.AMAX_KEY_PUBLIC.'&receive=categories&userlang=en');
 
