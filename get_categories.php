@@ -30,7 +30,7 @@ if($content->status == 200){
     foreach ($content->items as &$item) {
 
  
-      $maincatname = StripDanger($item->catname);;
+      $maincatname = $item->catname;
       /* ^^^^^ this is the main Category name,
                 you can use  this, or save it to your database */
                  
@@ -41,7 +41,7 @@ if($content->status == 200){
                     foreach ($item->subcat as &$subcatname) {
 
 
-                        $subcatname = StripDanger($subcatname);
+                        $subcatname = $subcatname;
                          /* ^^^^^ this is the sub Category name,
                                      you can use  this, or save it to your database */
 
