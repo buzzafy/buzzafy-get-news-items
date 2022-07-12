@@ -23,18 +23,30 @@ $content = json_decode($url);
 
 if($content->status == 200){
 
-            $catarray = $content->categories;
+            
 
             
 
-            foreach ($catarray as &$categoryname) {
+    foreach ($content->items as &$item) {
 
+ 
+      $maincatname = StripDanger($item->catname);;
+      /* ^^^^^ this is the main Category name,
+                you can use  this, or save it to your database */
+                 
                 
-                /* you can save $categoryname in your database */
-                echo    $categoryname .'<br>';
+                /* are there any children of the main category ? */
+                if(!empty($item->subcat)){
+
+                    foreach ($item->subcat as &$subcatname) {
 
 
+                        $subcatname = StripDanger($subcatname);
+                         /* ^^^^^ this is the sub Category name,
+                                     you can use  this, or save it to your database */
+
+
+                    }
+                }
             }
-
-
 }
