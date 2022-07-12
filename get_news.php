@@ -45,6 +45,7 @@ if($content->status == 200){
  
 
         $item_category      = $item->category;
+	$item_subcategory   = $item->subcategory;
         $item_publishtime   = $item->publishtime;        
         $item_featured      = $item->featured;//featured item?
         $item_title         = $item->title;
