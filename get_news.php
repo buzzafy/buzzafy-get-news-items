@@ -42,7 +42,8 @@ if($content->status == 200){
         please check if this already exists in your database before inserting the new item to prevent double entries
         */
 
- 
+ 	 $item_category_id      = $item->categoryid; //this can be used with the provided get_cats.php if needed
+	 $item_subcategory_id   = $item->subcategoryid; ////this can be used with the provided get_cats.php if needed
 
         $item_category      = $item->category;
 	$item_subcategory   = $item->subcategory;
