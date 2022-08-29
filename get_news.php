@@ -47,6 +47,8 @@ if($content->status == 200){
 
         $item_category      = $item->category;
 	$item_subcategory   = $item->subcategory;
+	    
+	$item_channel_ids   = $item->channelids;//array with the channel/ category id´s
         $item_publishtime   = $item->publishtime;        
         $item_featured      = $item->featured;//featured item?
         $item_title         = $item->title;
