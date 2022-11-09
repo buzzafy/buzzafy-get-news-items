@@ -61,21 +61,24 @@ if($content->status == 200){
 
         if(!empty($item->images)){
 
-            foreach ($item->images as &$imgur) {
+            foreach ($item->images as &$imgblob) {
+ 
+                /*  $imgur is an url to an image uploaded by author, 
+                    Any photos you need to copy to your own server. Hotlinking is not allowed.
 
-                    /*  $imgur is an url to an image uploaded by author, 
-                        Any photos you need to copy to your own server. Hotlinking is not allowed.
+                    eg you can copy each image intro a seperate db table
+                */
+                $imgjson = json_decode($imgblob);
+                 
+       
 
-                        eg you can copy each image intro a seperate db table
-                    */
+                $imgurl = $imgjson->url; // url to the image
+                $alttxt = $imgjson->alttxt;//alt text of this image if given by author
 
-                    
-                  /* eg:
-                  insert into photos
-										(newsid,photourl)
-                                        */
 
-            }
+
+                                     
+        }
 
 
 
