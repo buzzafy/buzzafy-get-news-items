@@ -1,6 +1,6 @@
 <?php
 /*
-© 1999 - 2022 Amaxwire.com
+© 1999 - 2023 Amaxwire.com
 
 This is just a simple example of how you can query our news items. You will need to store these in a database yourself.
 
