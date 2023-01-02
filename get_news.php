@@ -56,6 +56,7 @@ if($content->status == 200){
         $item_text          = $item->text;
         $item_city          = $item->city;
         $item_url           = $item->url;//url added by author, for more information or company website
+	$item_source        = $item->source;//name or company name of the publisher
 	$item_amaxwireurl   = $item->amaxwireurl;//url to original press release on Amaxwire
 
 
