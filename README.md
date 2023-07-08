@@ -4,7 +4,7 @@ Do you want news on your own website or in your app? Then you first need to down
 
 You can obtain an api key here: https://evesi.com/dashboard/apikey
 
-# Get news items from Amaxwire
+# Get news items from Evesi
 With our api you will receive an overview of the latest news items in a json format.
 
 With the following url you will receive an overview of the latest news items in a json format. It is updated once every 15 minutes. You can/ access this url only once every 15 minutes.
