@@ -1,6 +1,6 @@
 <?php
 /*
-© 1999 - 2022 Amaxwire.com
+© 1999 - 2023 Evesi / Amaxwire.com
 This is just an example of how you can query our categories. You will need to store these in a database yourself.
 This information is fixed, and will not be changed -often-.
 please contact us if you have any question
