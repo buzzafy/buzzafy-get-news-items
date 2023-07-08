@@ -1,6 +1,6 @@
 <?php
 /*
-© 1999 - 2023 Amaxwire.com
+© 1999 - 2023 Evesi / Amaxwire.com
 
 This is just a simple example of how you can query our news items. You will need to store these in a database yourself.
 
@@ -12,7 +12,7 @@ Any photos you need to copy to your own server. Hotlinking is not allowed.
 please contact us if you have any question
 */
 
-define('AMAX_KEY_PUBLIC' , 'Your public api key'); //Your public api key -> https://amaxwire.com/dashboard/apikey
+define('AMAX_KEY_PUBLIC' , 'Your public api key'); //Your public api key -> https://evesi.com/dashboard/apikey
 
 
 
@@ -22,7 +22,7 @@ The available languages can be found at amawire.com
 We are working hard to add more in the near future. 
 */
 
-$url = file_get_contents('https://amaxwire.com/api/get/?p='.AMAX_KEY_PUBLIC.'&receive=news&lang=en');
+$url = file_get_contents('https://evesi.com/api/get/?p='.AMAX_KEY_PUBLIC.'&receive=news&lang=en');
 
 
 $content = json_decode($url);
